@@ -1,1 +1,1 @@
-# IonicDemo
+Ionic
