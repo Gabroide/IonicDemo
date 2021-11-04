@@ -50,16 +50,16 @@ export class Tab2Page {
   playerLevel(){
     switch(this.count){
       case 1:
-        this.level = "Crack!!";
+        this.level = "¡¡Así me gusta Crack!!";
         break;
       case 2:
-        this.level ="Bueno!!";
+        this.level ="¡¡No está mal!!";
         break;
         case 3:
-          this.level ="Normalillo!!";
+          this.level ="¡¡A la tercera va la vencida!!";
           break;
           case 4:
-            this.level ="...!!";
+            this.level ="¡¡Hinca los más los codos!!";
             break;
     }
   }

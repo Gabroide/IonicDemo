@@ -13,7 +13,7 @@
     <ion-label for="comprueba" id="opLabel" *ngIf="4 > count && check == false">Inserta el valor de la suma</ion-label>
     <ion-input type="number" min="1" max="200" [(ngModel)] = "num" name="comprueba" id="comprueba" placeholder="Inserta el valor de la suma" *ngIf="4 > count && check == false"></ion-input>
     
-    <p>{{result}}</p>
+    <p *ngIf="!check">{{result}}</p>
     <p *ngIf="count > 0 && (4 > count && check == false)">Número de intentos:{{count}}</p>
     
     <ion-card *ngIf="count == 4 || check == true">
@@ -22,7 +22,7 @@
           ¡¡¡ Enhorabuena !!!
         </ion-card-header>
         <p>Sólo te han hecho falta {{count}} intentos</p>
-        <p>¡¡Eres un {{level}}</p>
+        <p>{{level}}</p>
       </div>
       <div *ngIf = "check == false">
         <ion-card-header>
@@ -31,7 +31,7 @@
         <ion-card-content>
           <p>El resultado de la suma era {{sum}}</p>
           <p>Mejor suerte la próxima vez.</p>
-          <p>¡¡Eres un {{level}}</p>
+          <p>{{level}}</p>
         </ion-card-content>
       </div>
     </ion-card>

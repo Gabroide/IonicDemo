@@ -1,5 +1,8 @@
 {
   "name": "primeraApp",
-  "integrations": {},
-  "type": "angular"
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "ea894372"
 }
